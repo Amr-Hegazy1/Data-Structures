@@ -1,16 +1,16 @@
 public class Stack {
-    Node start,free,end;
+    Node start,end;
 
     public void push(String data){
         Node n = new Node(data);
         if (start == null){
             start = n;
-            free = n;
+            
             end = start;
         }else{
             n.pointer = end;
             end = n;
-            free = n;
+            
 
         }
     }
